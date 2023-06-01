@@ -34,7 +34,7 @@ class trinhdo extends Database {
     }
     
     public function trinhdo__Add($ten_trinh_do, $ghi_chu) {
-        $obj = $this->connect->prepare("INSERT INTO trinhdo(ten_trinh_do, ghi_chu) VALUES (?,?)");
+        $obj = $this->connect->prepare("INSERT INTO trinhdo(ten_trinh_do, ghi_chi) VALUES (?,?)");
         $obj->execute(array($ten_trinh_do, $ghi_chu));
         return $obj->rowCount();
     }

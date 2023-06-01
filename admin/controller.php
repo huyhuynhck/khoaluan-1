@@ -10,6 +10,9 @@
             case "error":
                 require "layouts/error.php";
                 break;
+            case "import-from-excel":
+                require "import-from-excel/index.php";
+                break;
             default:
                 echo "<script>location.href = 'index.php?page=error'</script>";
                 break;

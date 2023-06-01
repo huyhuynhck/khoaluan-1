@@ -19,7 +19,6 @@
     require "model/sinhvien.php";
     require "model/taikhoan.php";
     require "model/trinhdo.php";
-    require "model/import.php";
 
 
 
@@ -44,6 +43,7 @@
     $sinhvien = new sinhvien();
     $taikhoan = new taikhoan();
     $trinhdo = new trinhdo();
-    $import = new import();
+    
+
     
 ?>

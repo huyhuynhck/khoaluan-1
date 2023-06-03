@@ -73,6 +73,12 @@ class lophoc extends Database {
         $obj->execute(array($id_nganh_hoc));
         return $obj->fetchAll();
     }
+    public function lophoc__Get_All_Nhom_Hoc() {
+        $obj = $this->connect->prepare("SELECT * FROM lophoc, nhomhoc WHERE lophoc.id_lop = nhomhoc.id_lop");
+        $obj->setFetchMode(PDO::FETCH_OBJ);
+        $obj->execute();
+        return $obj->fetchAll();
+    }
 
 }
 ?>

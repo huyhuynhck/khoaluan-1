@@ -13,6 +13,9 @@
             case "import-from-excel":
                 require "import-from-excel/index.php";
                 break;
+            case "quan-ly-kpi":
+                require "quan-ly-kpi/index.php";
+                break;
             default:
                 echo "<script>location.href = 'index.php?page=error'</script>";
                 break;
